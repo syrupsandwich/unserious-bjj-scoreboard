@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body class="flex column center">
+    <div id="score-board-container" class="flex column">
+      <div id="controls" class="flex center">
+        <div id="volume-control">
+          <label for="volume">VOLUME</label>
+          <input type="range" id="volume" name="volume" min="0" max="1" step="0.1"/>
+        </div>
+      </div>
+      <div id="timer" class="flex row center">
+        <button id="stop-timer">stop</button>
+        <span id="time-display">
+          <span><input id="minutes" name="minutes" type="number" max="99" placeholder="00"/></span>
+          <span id="colon">:</span>
+          <span><input id="seconds" name="seconds" type="number" max="60" placeholder="00"/></span>
+        </span>
+        <button id="start-timer">start</button>
+      </div>
+  
+      <div class="container flex row">
+        <div id="left-sub-container" class="flex column gap">
+          <h3 id="left-color">LEFT</h3>
+          <div class="verdict-display">
+            <p id="left-verdict"></p>
+          </div>
+          <p class="score-display">
+            <span id="left-score">00</span>
+            <span id="left-advantage">.00</span>
+          </p>
+          <div class="flex row gap btn-container">
+            <button id="left-plus-2">+2</button>
+            <button id="left-plus-3">+3</button>
+            <button id="left-plus-4">+4</button>
+            <button id="left-plus-adv">+Adv</button>
+          </div>
+          <div class="flex column gap btn-container">
+            <button id="left-penalty">penalty</button>
+            <button id="left-submission">submission</button>
+            <button id="left-disqualification">disquilification</button>
+          </div>
+        </div>
+  
+        <div id="right-sub-container" class="flex column gap">
+          <h3 id="right-color">RIGHT</h3>
+          <div class="verdict-display">
+            <p id="right-verdict"></p>
+          </div>
+          <p class="score-display">
+            <span id="right-score">00</span>
+            <span id="right-advantage">.00</span>
+          </p>
+          <div class="flex row gap btn-container">
+            <button id="right-plus-2">+2</button>
+            <button id="right-plus-3">+3</button>
+            <button id="right-plus-4">+4</button>
+            <button id="right-plus-adv">+Adv</button>
+          </div>
+          <div class="flex column gap btn-container">
+            <button id="right-penalty">penalty</button>
+            <button id="right-submission">submission</button>
+            <button id="right-disqualification">disqualification</button>
+          </div>
+        </div>
+      </div>
+  
+      <div id="extra-buttons" class="flex center">
+        <button id="reset"><div>RESET</div> the score board</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "cursed-timer";
+  src: url("./font/CursedTimerUlil-Aznm.ttf");
+}
+
+@font-face {
+  font-family: "verdana";
+  src: url("./font/Verdana.ttf");
+}
+
+@font-face {
+  font-family: "verdana-bold";
+  src: url("./font/Verdana-Bold.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: "verdana";
+  height: 100%;
+  background: #6b7280;
+}
+
+#score-board-container{
+  width: 1100px;
+  background: #1f2937;
+  border-radius: 30px;
+}
+
+#timer {
+  padding: 20px 0 40px;
+  gap: 20px;
+}
+
+#time-display.active {
+  color: red;
+}
+
+button#stop-timer,
+button#start-timer {
+  width: 80px;
+}
+
+#time-display {
+  border-radius: 5px;
+  background-color: #080001;
+  color: #fef3c7;
+  padding: 6px 18px 8px;
+  height: 63px;
+  font-size: 0;
+}
+
+#time-display>span {
+  font-size: 50px;
+}
+
+#time-display>span:not(#colon) {
+  width: 70px;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: -16px;
+}
+
+#time-display>span>input {
+  font-size: inherit;
+  border: none;
+  font-family: "cursed-timer";
+  background: none;
+  width: 120px;
+  color: inherit;
+  background-color: inherit;
+}
+
+.container {
+  justify-content: space-evenly;
+  padding: 4ch 0;
+  color: #eeeeee;
+}
+
+#left-sub-container,
+#right-sub-container {
+  text-align: center;
+}
+
+button.arrow.y-flip {
+  transform: scale(-1, 1);
+}
+
+button.arrow {
+  font-size: 40px;
+  height: 10px;
+  overflow: hidden;
+  opacity: 40%;
+}
+
+h3 {
+  font-size: 40;
+  font-family: "verdana-bold";
+  margin: 0;
+}
+
+button {
+  padding: 0.8ch;
+  background: transparent;
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
+  color: #9aabd8;
+  font-size: 18px;
+}
+
+.verdict-display {
+  background-color: #080001;
+  padding: 8px;
+  font-size: 34px;
+  height: 2ch;
+  font-family: "cursed-timer";
+  border-radius: 5px;
+}
+
+.verdict-display>p {
+  color: #d98cbb;
+  text-shadow: 0 0 8px black;
+  text-align: center;
+  margin: 0;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+
+.score-display {
+  background-color: #080001;
+  border-radius: 0.4rem;
+  padding: 20px 20px 10px;;
+  margin: 0;
+  font-family: "cursed-timer";
+  font-size: 90px;
+  /*overflow: hidden;*/
+}
+
+#left-score,
+#right-score{
+  color: #f94f6D;
+  margin-right: -1ch;
+}
+
+#left-advantage,
+#right-advantage {
+  color: #a63268;
+}
+
+.btn-container.row>button{
+  font-family: "cursed-timer";
+  padding-top: 1ch;
+  flex-grow: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.gap {
+  gap: 0.8ch;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container.row {
+  margin-top: 2ch;
+}
+
+.btn-container.column {
+  margin-top: 0.4ch;
+  gap: 1ch;
+}
+
+button#reset {
+  font-size: 12px;
+  color: #f94f6d;
+  border-color: #f94f6d;
+
+}
+
+button#reset>div {
+  font-size: 20px;
+  letter-spacing: 8px;
+  margin-left: 8px;
+}
+
+#extra-buttons {
+  padding: 50px 0 30px;
+}
+
+button:disabled {
+  opacity: 50%;
+}
+
+input#minutes.non-click,
+input#seconds.non-click {
+  pointer-events: none;
+}
+
+#volume-control>input,
+#volume-control>label{
+  display: block;
+  text-align: center;
+}
+
+#volume-control>input {
+  opacity: 50%;
+  filter: contrast(400%);
+}
+
+#controls {
+  color: #9aabd8;
+  padding-top: 30px;
+}
